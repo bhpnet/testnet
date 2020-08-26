@@ -1,0 +1,408 @@
+{
+  "genesis_time": "2020-08-26T04:04:00.825407117Z",
+  "chain_id": "testing",
+  "consensus_params": {
+    "block": {
+      "max_bytes": "22020096",
+      "max_gas": "-1",
+      "time_iota_ms": "1000"
+    },
+    "evidence": {
+      "max_age": "100000"
+    },
+    "validator": {
+      "pub_key_types": [
+        "ed25519"
+      ]
+    }
+  },
+  "app_hash": "",
+  "app_state": {
+    "mint": null,
+    "gov": {
+      "starting_proposal_id": "1",
+      "deposits": null,
+      "votes": null,
+      "proposals": null,
+      "deposit_params": {
+        "min_deposit": [
+          {
+            "denom": "abhp",
+            "amount": "1000000000"
+          }
+        ],
+        "max_deposit_period": "172800000000000"
+      },
+      "voting_params": {
+        "voting_period": "172800000000000"
+      },
+      "tally_params": {
+        "quorum": "0.334000000000000000",
+        "threshold": "0.500000000000000000",
+        "veto": "0.334000000000000000"
+      }
+    },
+    "slashing": {
+      "params": {
+        "max_evidence_age": "120000000000",
+        "signed_blocks_window": "100",
+        "min_signed_per_window": "0.500000000000000000",
+        "downtime_jail_duration": "600000000000",
+        "slash_fraction_double_sign": "0.050000000000000000",
+        "slash_fraction_downtime": "0.010000000000000000"
+      },
+      "signing_infos": {},
+      "missed_blocks": {}
+    },
+    "token": {
+      "params": {
+        "issue_fee": {
+          "denom": "abhp",
+          "amount": "2500"
+        },
+        "mint_fee": {
+          "denom": "abhp",
+          "amount": "10"
+        },
+        "burn_fee": {
+          "denom": "abhp",
+          "amount": "10"
+        },
+        "modify_fee": {
+          "denom": "abhp",
+          "amount": "0"
+        },
+        "transfer_ownership_fee": {
+          "denom": "abhp",
+          "amount": "10"
+        }
+      },
+      "tokens": [
+        {
+          "description": "OK Group Global Utility Token",
+          "symbol": "abhp",
+          "original_symbol": "OKT",
+          "whole_name": "OKT",
+          "original_total_supply": "1000000000",
+          "total_supply": "1000000000",
+          "owner": "bhp1v5gsqsc2q0334c53ceuuj9z0akssgh8h6d47fv",
+          "mintable": true
+        }
+      ],
+      "locked_assets": null,
+      "locked_fees": null
+    },
+    "staking": {
+      "params": {
+        "unbonding_time": "1209600000000000",
+        "max_validators": 21,
+        "max_entries": 7,
+        "bond_denom": "abhp"
+      },
+      "last_total_power": "0",
+      "last_validator_powers": null,
+      "validators": null,
+      "delegations": null,
+      "unbonding_delegations": null,
+      "redelegations": null,
+      "exported": false
+    },
+    "params": null,
+    "bank": {
+      "send_enabled": true
+    },
+    "accounts": [
+      {
+        "address": "bhp1uzftr5c2nmm5q0xvh5eg4vch0v7mn24gm6kxcr",
+        "coins": [
+          {
+            "denom": "abhp",
+            "amount": "1250000000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": null
+      },
+      {
+        "address": "bhp18np5ds2t2u5xadxfyryzmecum6pftg2f4000s0",
+        "coins": [
+          {
+            "denom": "abhp",
+            "amount": "1250000000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": null
+      },
+      {
+        "address": "bhp1jylyrdfu3qvejtua5csx362cp0n6c0nmk924wp",
+        "coins": [
+          {
+            "denom": "abhp",
+            "amount": "1250000000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": null
+      },
+      {
+        "address": "bhp1tad7fa3uzxntfesj5uxv7vc5meffvhlv7h64y3",
+        "coins": [
+          {
+            "denom": "abhp",
+            "amount": "1250000000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": null
+      }
+    ],
+    "genutil": {
+      "gentxs": [
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "node0",
+                    "identity": "",
+                    "website": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.000000000000000000",
+                    "max_rate": "0.000000000000000000",
+                    "max_change_rate": "0.000000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "bhp1uzftr5c2nmm5q0xvh5eg4vch0v7mn24gm6kxcr",
+                  "validator_address": "bhpvaloper1uzftr5c2nmm5q0xvh5eg4vch0v7mn24g3ejuhr",
+                  "pubkey": "bhpvalconspub1zcjduepqchv8cq2c3sf6gy3hwmcjdf38ynwark4s07tm0a04nxyqfahh2ktsk33m2c",
+                  "value": {
+                    "denom": "abhp",
+                    "amount": "10000000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "0"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "A+doioG0CVbJtCzvWy4+PQAW7xC0xSSVMnbwb4jvpgXH"
+                },
+                "signature": "sgTUTjgc/HuACOjJ8HherlMltYTTACZcnlEjDnhOVwsEdDzFCh6JK1Jw5BNxGjoRBSuQrzon7oqYgOmh7UuMfQ=="
+              }
+            ],
+            "memo": "3113d028f483a41e88057a067e21e6a13486a994@192.168.10.2:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "node1",
+                    "identity": "",
+                    "website": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.000000000000000000",
+                    "max_rate": "0.000000000000000000",
+                    "max_change_rate": "0.000000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "bhp18np5ds2t2u5xadxfyryzmecum6pftg2f4000s0",
+                  "validator_address": "bhpvaloper18np5ds2t2u5xadxfyryzmecum6pftg2flvt4l0",
+                  "pubkey": "bhpvalconspub1zcjduepqsl56nhf0nwdqt8xgxwsng9y8968rtv6ckhaxaw7yfdcpef6w2mdqg5qeu4",
+                  "value": {
+                    "denom": "abhp",
+                    "amount": "10000000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "0"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "AhG72HleL5w7VRhXu3hMcVcRkuji8PZwv8mdlYmigsdU"
+                },
+                "signature": "VObWZ32G6YtBvxktY+0utmfNfB3HeoTKzCOyN++req4MgJsOKHwPZPE5mGEQylfLVtpf7Q4z4p3DWiFhQVXt1A=="
+              }
+            ],
+            "memo": "35d9bf1cedb4963469507d81e71acfcf202aa898@192.168.10.3:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "node2",
+                    "identity": "",
+                    "website": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.000000000000000000",
+                    "max_rate": "0.000000000000000000",
+                    "max_change_rate": "0.000000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "bhp1jylyrdfu3qvejtua5csx362cp0n6c0nmk924wp",
+                  "validator_address": "bhpvaloper1jylyrdfu3qvejtua5csx362cp0n6c0nmuxw0pp",
+                  "pubkey": "bhpvalconspub1zcjduepqw5ang42zj67k90ufs6673ryrn2mqat9ydjq6dd78cecyl7lx0g7s9vmkl2",
+                  "value": {
+                    "denom": "abhp",
+                    "amount": "10000000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "0"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "AjdcHkS9Wmh3+1OOXewVvLy5YkrdpgX9xYkJskxNEwQe"
+                },
+                "signature": "ggQs85dtz0vwNo/mqweo/G78JN4LauWpJsXfNzyyhGQOq2tzcdX36yfeVFfExnUZMK+iu8EKd7UmK/4Xwc7K7w=="
+              }
+            ],
+            "memo": "34c3a69b0edad15d1de19abc15390cde3df792bd@192.168.10.4:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "node3",
+                    "identity": "",
+                    "website": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.000000000000000000",
+                    "max_rate": "0.000000000000000000",
+                    "max_change_rate": "0.000000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "bhp1tad7fa3uzxntfesj5uxv7vc5meffvhlv7h64y3",
+                  "validator_address": "bhpvaloper1tad7fa3uzxntfesj5uxv7vc5meffvhlv5570t3",
+                  "pubkey": "bhpvalconspub1zcjduepq0rpm44mpp5p57s24aq29t62ggnxfg3at6k4apkj65z024uryqznq76936s",
+                  "value": {
+                    "denom": "abhp",
+                    "amount": "10000000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "0"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "A1IfyB6qrc9222e2N/pQZ+uN/moFjqfw4ZXGUdbKMYGl"
+                },
+                "signature": "Hg+XyGOvWtvX0sWlcavanjAUKHmjIfmr8uYEPuxLbCgoMGQOI7ZsNfvqqldiMqYvdaQwmXfQCchOEoJsY579EQ=="
+              }
+            ],
+            "memo": "bdc14bc6e14a97ee6f56fb3b17c3a9bd09fc4c73@192.168.10.5:26656"
+          }
+        }
+      ]
+    },
+    "crisis": {
+      "constant_fee": {
+        "denom": "abhp",
+        "amount": "1000"
+      }
+    },
+    "supply": {
+      "supply": []
+    },
+    "auth": {
+      "params": {
+        "max_memo_characters": "256",
+        "tx_sig_limit": "7",
+        "tx_size_cost_per_byte": "10",
+        "sig_verify_cost_ed25519": "590",
+        "sig_verify_cost_secp256k1": "1000"
+      }
+    },
+    "distribution": {
+      "fee_pool": {
+        "community_pool": []
+      },
+      "community_tax": "0.020000000000000000",
+      "base_proposer_reward": "0.010000000000000000",
+      "bonus_proposer_reward": "0.040000000000000000",
+      "withdraw_addr_enabled": true,
+      "delegator_withdraw_infos": [],
+      "previous_proposer": "",
+      "outstanding_rewards": [],
+      "validator_accumulated_commissions": [],
+      "validator_historical_rewards": [],
+      "validator_current_rewards": [],
+      "delegator_starting_infos": [],
+      "validator_slash_events": []
+    }
+  }
+}
